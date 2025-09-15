@@ -1,0 +1,59 @@
+MongoDB is a database that stores data in a flexible, easy-to-use way.
+It is a type of NoSQL
+Instead of using tables like MySQL, it stores data as documents in a format similar to JSON (key-value pairs).
+Example document: 
+{
+  "name": "John",
+  "age": 25,
+  "city": "Pune"
+}
+Mongo Db is a document database that means data will be in a object 
+
+| Relational Database (SQL) | MongoDB (NoSQL)      |
+| ------------------------- | -------------------- |
+| Database                  | Database             |
+| Table                     | Collection           |
+| Row (record)              | Document (BSON/JSON) |
+| Column                    | Field (key/value)    |
+
+
+
+
+some commands :
+1. show dbs : The show dbs command in MongoDB is used to list all databases present on the MongoDB server.
+2. use myschoolDB : it will check if this database already exists , if yes it will switched to that database and start using it , if the databses eith named as myschoolDB doesnt exists it will create a new database and then starts using it 
+3. db.createCollection("student") : This explicitly creates a new collection called student in the current database. db refers to the current database you’re connected to (from the last use <dbName> command).  the collection name is student
+4. db.student.drop() : this deletes the collection from the current database 
+5. db.student.renameCollection(students) : this is used to rename a collection
+6. db.students.insertOne() : This is a MongoDB command to insert a single document into a collection. The method requires a document (JSON-like object) inside the parentheses, eg : db.students.insertOne({ name: "Alice", grade: "A" })
+when you insert a document without specifying an _id field, MongoDB automatically generates a unique identifier for it.
+7. db.students.insertMany() : insertMany() takes an array of documents as its first argument. u can make any documents inside an array 
+for eg : db.students.insertMany([
+  { name: "Bob", grade: "B" },
+  { name: "Charlie", grade: "A" },
+  { name: "Daisy", grade: "C" }
+])
+
+8. db.students.find().pretty() : This is a MongoDB shell command used to display documents in a more readable (formatted) way. 
+for eg : db.students.find().pretty()
+
+Note : in this all commands db → is your current database. or db means current database or u are applying changes in a current database
+
+9. db.students.find() : retrieves all documents from the students collection in the current database.
+for eg : db.students.find()
+
+10. db.students.findOne():  is the MongoDB shell command used to retrieve just one document from a collection.
+for eg : db.students.findOne()
+
+11. db.students.deleteOne() : is the command used to delete only one document from the collection  
+for eg : db.students.deleteOne({"sName" : "Gon"})  // just give any info of the document which u wanna delete 
+
+12. db.sstudents.deleteMany() : Deletes multiple documents from the students collection that match a filter (condition)
+for eg : db.students.deleteMany({ grade: "C" })
+Delete all students with grade "C":
+
+13. db.students.updateOne() : this updates the existing docuemnt in a collection 
+for eg : db.students.updateOne({"_id" : ObjectId("68c6d6b67350fc900e981a58")} , {$set:{"sName" : "Yhawch" , "sEmail" : "yhawch@gmail.com"}})
+
+
+we gonna install package.json and express bcoz of express we gonna do routing concept and request and response concept with the help of express 

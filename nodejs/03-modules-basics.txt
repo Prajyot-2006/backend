@@ -1,0 +1,20 @@
+Types of Modules
+
+1. Core Modules
+Built-in modules provided by Node.js, such as fs, http, path, etc.
+No installation needed.
+
+2. Local Modules (your own files)
+You can create any logic and export it.
+for eg : addToCart() , update()
+
+3. Third-Party Modules (installed with npm)
+Installed using: npm install <package-name>
+for eg : axios in react
+
+
+
+we can make modules in React and aswell as in nodejs 
+In react : we use import,export to create modules 
+In nodejs : we use require concept to call a module
+and in nodejs we have 2 types of exports : default export module and named export module both have lil bit different syantx

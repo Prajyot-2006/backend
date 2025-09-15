@@ -1,0 +1,75 @@
+Note : we use npm init -y to install package.json in a particular folder 
+also to install express in a particular folder we used npm install express 
+
+
+Express.js is a web framework for Node.js.
+It helps you build web servers and APIs easily. Instead of writing a lot of code to handle requests and responses in plain Node.js, Express gives you simple functions to do it quickly.
+
+Core Features :
+1. Routing
+Routing means deciding what happens when someone visits a URL.
+When a user visits a certain URL, Express decides which page or response to show.
+Example:
+/ → Home page
+/about → About page
+/contact → Contact page
+So routing is simply mapping URLs to responses.
+
+
+
+2. Middleware
+Middleware is like a helper function that runs between the request and the response.
+It can do things like logging, checking authentication, or parsing data before sending a response.
+Middleware
+Middleware is like a security check or helper that runs in the middle before sending the final response.
+It can:
+Log requests (who is visiting).
+Check if the user is logged in.
+Process data coming from forms or APIs.
+Without middleware, you would have to repeat the same checks again and again in every route. Middleware saves that effort.
+
+
+
+3. Templating
+Templating is a way to make dynamic HTML pages using values from backend.
+Instead of sending plain text, we send HTML with variables.
+Express supports template engines like EJS, Pug, Handlebars.
+
+
+
+4. RESTful API?
+
+REST means Representational State Transfer.
+It’s just a set of rules for building APIs.
+In simple words: each URL represents a resource (like users, products, orders), and we use HTTP methods (GET, POST, PUT, DELETE) to interact with them.
+
+Example in plain English:
+GET /products → Get all products
+GET /products/1 → Get product with ID 1
+POST /products → Add a new product
+PUT /products/1 → Update product with ID 1
+DELETE /products/1 → Delete product with ID 1
+
+
+5. MVC stands for:
+
+M → Model
+V → View
+C → Controller
+
+It’s a way to organize your project so the code is clean and easy to manage.
+
+1. Model
+Think of Model as the part that talks to the database.
+It handles data: saving, fetching, updating, deleting.
+Example: Products, Users, Orders tables.
+
+2. View
+View is what the user sees.
+It’s the frontend part: HTML, CSS, templates.
+Example: A webpage that shows a list of products.
+
+3. Controller
+Controller is the “middle manager”.
+It receives a request from the user, asks the Model for data, and then gives that data to the View.
+Example: User clicks on “View Products” → Controller asks Model for products → sends them to View → View shows them nicely.

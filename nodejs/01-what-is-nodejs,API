@@ -1,0 +1,61 @@
+Node.js is simply JavaScript outside the browser.
+
+Normally, JavaScript runs only inside web browsers (like Chrome, Firefox). But with Node.js, you can run JavaScript directly on your computer/server.
+
+It is built on Chrome’s V8 JavaScript engine (super fast).
+It lets you use JavaScript to build backend/server-side applications.
+You can handle files, databases, networks, and APIs with it.
+It comes with npm (Node Package Manager) which gives you thousands of ready-to-use libraries.
+
+👉 In short:
+Node.js = A runtime environment that allows you to run JavaScript on the server, not just in the browser.
+In short: Node.js is mainly used to build APIs and handle backend logic.
+
+
+
+what is API : an API 
+API = Application Programming Interface
+
+In web development, an API is like a waiter in a restaurant:
+You (frontend/React) ask the waiter for food → request
+The waiter goes to the kitchen (backend/Node + database) → process
+The waiter brings back the food to you → response
+
+So in MERN:
+Frontend (React) asks data from the Backend (Node + Express) through an API.
+Backend talks to the Database (MongoDB).
+Backend then sends data back to the frontend.
+
+👉 Example:
+If you open an e-commerce site and click on "All Products":
+Your browser (frontend) calls an API → GET /api/products
+Node.js (backend) fetches products from MongoDB
+Sends back JSON data to React
+
+
+
+for eg : u are filling login info in login form like username and password and then a login button so the data u fill in username and password input type is gone to the backend through API and then backend sends that data to the database to store it temporarily/permanently and then again database sends back data to backend and the backend again send back data to the frontend to display it on website 
+
+chatgpt correction : 
+For example: you are filling login info in a login form like username and password and then clicking the login button, so the data you fill in the input fields goes to the backend through an API. The backend then sends that data to the database, not to store it again, but to check/verify if it already exists and is correct. The database sends back the result to the backend, and then the backend again sends the response to the frontend to display on the website (like "Login successful" or "Invalid credentials").
+
+
+
+How we get the package.json file ? 
+- by using the npm init -y command 
+when we use this command then it will download a package.json file in a particular folder or in ur current directory 
+
+
+What is nodemon : it will automatically run the code whenever the code changes or updates
+Nodemon is a tool for Node.js that automatically restarts your application whenever you make changes to your code (like update, save, or edit a file).
+So instead of stopping and running node app.js again and again, Nodemon does it for you automatically.
+sometimes we change the code and then again we type running command(node filename.js) to run the code , so nodemon does it without typing the code running command(node filename.js) 
+The command to install this package is : npm install -g nodemon (type in cmd without changing directory bcoz this package is gonna install in system(particular user's system) )
+after this package install we can check where it is present goto local c drive -> Users -> Prajyot -> App Data -> Roaming -> npm 
+we must run this command also after installing pacakage : Set-ExecutionPolicy RemoteSigned -Scope CurrentUser  
+this command is to give the permission to use the pacakge while development 
+we must run this command in powershell 
+
+we also can install nodemon in a specific folder like this one but we have installed it in entire system so the benefit is whenever we need nodemon in any other project still we can have access to it we dont need to re-install in that folder 
+
+Inshort : we need nodemon in backend development(coz server should always run when anything changes ) so the command to install it is npm install -g nodemon and after installing it we must give permission to it by typing this command Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
