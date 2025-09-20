@@ -44,6 +44,7 @@ for eg : db.students.find()
 
 10. db.students.findOne():  is the MongoDB shell command used to retrieve just one document from a collection.
 for eg : db.students.findOne()
+for eg : db.enquiries.findOne({"_id" : ObjectId('68ce7b6b0f29a27d491cac49')})
 
 11. db.students.deleteOne() : is the command used to delete only one document from the collection  
 for eg : db.students.deleteOne({"sName" : "Gon"})  // just give any info of the document which u wanna delete 

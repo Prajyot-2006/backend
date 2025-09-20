@@ -1,0 +1,18 @@
+📝 In general
+
+A model is a representation of some data and the rules for working with that data.
+It’s part of the MVC pattern (Model–View–Controller):
+Model = data + business logic
+View = how it’s displayed
+Controller = handles user requests
+
+
+📝 In databases (like Mongoose or Django)
+
+A model is basically a class that maps to a database table/collection.
+It defines:
+What fields/columns the data has
+What types those fields are
+Any validation or default values
+Utility methods to query, insert, update, delete
+So you interact with the model instead of writing raw queries.

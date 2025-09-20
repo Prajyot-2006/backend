@@ -1,0 +1,19 @@
+MVC : MVC is a software design pattern used to organize code in a clean, structured way.
+It stands for Model – View – Controller.
+
+Model → we keep schema's in model , Handles the data and database logic.
+Example: Your enquiryModel in Mongoose (it defines how data is stored in MongoDB).
+
+view → agar koi data render karana ho , view karana ho to isme dalte hai or Handles what the user sees (UI).
+Example: HTML, CSS, frontend pages that show forms, tables, etc.
+
+controller - iske andar ham functionality ko rakhte hai or Handles the logic between Model and View.
+Example: Your Express routes (/api/enquiry-insert, /api/enquiry-update, etc.) — they take input, talk to the model, and send a response back.
+
+
+
+Quick Analogy for Beginners:
+Think of ordering food at a restaurant:
+View = Menu card & waiter (what you see and interact with)
+Controller = Waiter who takes the order to the kitchen and brings food back
+Model = Kitchen where the real cooking (data handling) happens

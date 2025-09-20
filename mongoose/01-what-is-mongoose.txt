@@ -1,0 +1,24 @@
+📝 What is Mongoose?
+=> Mongoose is a popular Node.js library that makes working with MongoDB easier.
+
+
+It provides:
+Schemas – define the structure of your documents.
+Models – classes you can use to create, read, update, delete (CRUD) documents.
+Validation – automatically check data before saving.
+Middleware/Hooks – run logic before/after saving, updating, etc.
+
+So instead of manually doing db.collection('student').find(...), you define a model once and use clean methods like Student.find() or Student.create().
+
+
+1st what we did is we installed package.json using npm init -y 
+and then also installed express by using npm i express 
+and also installed mongoose by using npm i mongoose to start coding
+
+
+A model is a representation of some data and the rules for working with that data.
+It’s part of the MVC pattern (Model–View–Controller):
+
+Model = data + business logic
+View = how it’s displayed
+Controller = handles user requests
